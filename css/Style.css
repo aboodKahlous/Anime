@@ -1,0 +1,634 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #110E17;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.top-section .container ul li {
+  display: inline-block;
+  margin: 20px;
+}
+.top-section .container ul li i {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: #333;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 60px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  cursor: pointer;
+  color: #fff;
+}
+.top-section .container ul li .fa-facebook, .top-section .container ul li .fa-telegram {
+  border: 1px solid blue;
+}
+.top-section .container ul li .fa-facebook:hover, .top-section .container ul li .fa-telegram:hover {
+  background-color: blue;
+  border: 1px solid blue;
+}
+.top-section .container ul li .fa-telegram {
+  border: 1px solid #0088cc;
+}
+.top-section .container ul li .fa-telegram:hover {
+  background-color: #0088cc;
+  border: 1px solid #0088cc;
+}
+.top-section .container ul li .fa-youtube {
+  border: 1px solid #ff3300;
+}
+.top-section .container ul li .fa-youtube:hover {
+  background-color: #ff3300;
+}
+.top-section .container ul li .fa-instagram {
+  border: 1px solid #d116d1;
+}
+.top-section .container ul li .fa-instagram:hover {
+  background: radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+}
+.top-section .container ul li .fa-whatsapp {
+  border: 1px solid #16cc10;
+}
+.top-section .container ul li .fa-whatsapp:hover {
+  background-color: #16cc10;
+}
+@media (max-width: 767px) {
+  .top-section .container ul li {
+    margin: 15px;
+  }
+  .top-section .container ul li i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+}
+
+header.navbar {
+  background-color: rgba(42, 48, 60, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  header.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+header.navbar .container {
+  color: #fff;
+}
+header.navbar .container .logo h3 {
+  color: #fff;
+  font-size: 26px;
+}
+header.navbar .container .logo h3::first-letter {
+  font-size: 33px;
+  color: #960AFE;
+}
+@media (max-width: 767px) {
+  header.navbar .container .logo h3 {
+    font-size: 18px;
+  }
+}
+header.navbar .container .form form .search {
+  position: relative;
+}
+header.navbar .container .form form .search input[type=text] {
+  width: 500px;
+  padding: 4px 20px;
+  background-color: #2A303C;
+  color: #fff;
+  border: 1px solid #960AFE;
+  border-radius: 4px;
+}
+header.navbar .container .form form .search i {
+  position: absolute;
+  color: #960AFE;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  header.navbar .container .form form .search input[type=text] {
+    width: 200px;
+    margin-top: 5px;
+  }
+  header.navbar .container .form form .search i {
+    position: absolute;
+    color: #960AFE;
+    top: 13px;
+  }
+}
+@media (min-width: 767px) {
+  header.navbar .container .form form .search input[type=text] {
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  header.navbar .container .form form .search input[type=text] {
+    width: 500px;
+  }
+}
+header.navbar .container .sidebar-btn .btn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: none;
+}
+header.navbar .container .sidebar-btn .btn span {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header.navbar .container .sidebar-btn .btn span:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header.navbar .container .sidebar-btn .btn span:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header.navbar .container .sidebar-btn .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+header.navbar .container .sidebar-btn .btn.toggle span {
+  background: transparent;
+}
+header.navbar .container .sidebar-btn .btn.toggle span::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+header.navbar .container .sidebar-btn .btn.toggle span::after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media (max-width: 767px) {
+  header.navbar .container .sidebar-btn .btn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: none;
+    margin-right: 5px;
+  }
+  header.navbar .container .sidebar-btn .btn span {
+    width: 25px;
+  }
+}
+header.navbar .side-bar {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+  left: -350px;
+  background-color: rgba(42, 48, 60, 0.9);
+  width: 250px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+header.navbar .side-bar .account {
+  margin: 10px;
+  margin-bottom: 0;
+}
+header.navbar .side-bar .account img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+}
+header.navbar .side-bar .account i {
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header.navbar .side-bar .account i:hover {
+  color: #960AFE;
+}
+header.navbar .side-bar h3 {
+  color: #fff;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  margin-left: 18px;
+}
+header.navbar .side-bar div.nav .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header.navbar .side-bar div.nav .item h5 {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
+}
+header.navbar .side-bar div.nav .item p {
+  margin: 0;
+}
+header.navbar .side-bar div.nav .item i {
+  color: #fff;
+  font-size: 16px;
+}
+header.navbar .side-bar div.nav .item:nth-child(3) {
+  border-bottom: 1px solid #ddd;
+}
+header.navbar .side-bar div.nav .item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+header.navbar .side-bar div.nav .item:hover {
+  background-color: #960AFE;
+}
+header.navbar .side-bar div.nav .item:hover h5, header.navbar .side-bar div.nav .item:hover i {
+  color: #fff;
+}
+header.navbar .side-bar div.nav .item.active {
+  background-color: #960AFE;
+}
+header.navbar .side-bar div.nav .item.active h5, header.navbar .side-bar div.nav .item.active i {
+  color: #fff;
+}
+header.navbar .active {
+  left: 0;
+}
+
+.secound-section {
+  overflow: hidden;
+}
+.secound-section .anime {
+  position: relative;
+  cursor: pointer;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.secound-section .anime img {
+  width: 110px;
+  height: 110px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.secound-section .anime img:hover {
+  opacity: 0.4;
+}
+.secound-section .anime .text {
+  color: #fff;
+  margin-left: 15px;
+  margin-top: -10px;
+}
+.secound-section .anime .text h6 {
+  font-size: 14px;
+  color: #ccc;
+}
+.secound-section .anime .Watch {
+  position: absolute;
+  top: 32%;
+  left: 43%;
+}
+.secound-section .anime .Watch i {
+  font-size: 18px;
+  color: rebeccapurple;
+}
+.secound-section .top-anime .slick-center .anime {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 20px;
+}
+.secound-section .container .anime img {
+  margin: 20px;
+}
+.secound-section .top-anime .slick-center .anime img {
+  margin: 20px;
+}
+.secound-section .top-anime .slick-center img {
+  -webkit-transform: scale(1.14);
+          transform: scale(1.14);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.secound-section button.slick-next.slick-arrow {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+.secound-section button.slick-prev.slick-arrow {
+  position: absolute;
+  top: 35%;
+  left: -50%;
+}
+
+/*******************************    start header    *******************************/
+.top-section {
+  position: relative;
+  height: 650px;
+  position: relative;
+  background: url(../../../img/animy.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 2;
+}
+.top-section .container h3 {
+  font-size: 40px;
+}
+.top-section .container h4 {
+  font-size: 25px;
+}
+.top-section .container h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #960AFE;
+}
+.top-section .container p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .top-section .container h3 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .top-section .container h4 {
+    font-size: 18px;
+  }
+  .top-section .container p {
+    font-size: 14px;
+  }
+}
+
+/*******************************    end header    *******************************/
+/*******************************    start Section last-animy    *******************************/
+section.last-animy {
+  margin-bottom: 40px;
+}
+section.last-animy h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+section.last-animy h3 span {
+  color: #960AFE;
+}
+section.last-animy h3::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40%;
+  height: 4px;
+  background-color: #960AFE;
+}
+section.last-animy .animy-added .animy-last .animy {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  margin-bottom: 20px;
+}
+section.last-animy .animy-added .animy-last .animy img {
+  width: 100%;
+  height: 140px;
+}
+section.last-animy .animy-added .animy-last .animy .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+section.last-animy .animy-added .animy-last .animy .text h6 {
+  font-size: 14px;
+  color: #fff;
+}
+section.last-animy .animy-added .animy-last .animy .text p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+section.last-animy .animy-added .animy-last .animy .text p i {
+  color: yellow;
+  margin-right: 5px;
+}
+section.last-animy .animy-added .animy-last .animy .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 0;
+  height: calc(100% - 40px);
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+section.last-animy .animy-added .animy-last .animy .add i {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+section.last-animy .animy-added .animy-last .animy .add i:nth-child(1):hover {
+  color: #d80e0e;
+}
+section.last-animy .animy-added .animy-last .animy .add i:nth-child(2):hover {
+  color: #960AFE;
+}
+section.last-animy .animy-added .animy-last .animy:hover .add {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  section.last-animy h3 {
+    font-size: 18px;
+  }
+  section.last-animy p {
+    font-size: 16px;
+  }
+}
+
+/*******************************    End Section last-animy   *******************************/
+/*******************************    start Section fixed-anime   *******************************/
+section.fixed-anime {
+  margin-bottom: 30px;
+}
+section.fixed-anime h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+section.fixed-anime h3 span {
+  color: #960AFE;
+}
+section.fixed-anime h3::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40%;
+  height: 4px;
+  background-color: #960AFE;
+}
+section.fixed-anime .fix-anime .anime {
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+}
+section.fixed-anime .fix-anime .anime img {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+section.fixed-anime .fix-anime .anime img:hover {
+  opacity: 0.4;
+}
+section.fixed-anime .fix-anime .anime::before {
+  content: "Displays";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  background-color: rgba(150, 10, 254, 0.6);
+  border-radius: 12px 0 12px 0;
+  z-index: 3;
+}
+section.fixed-anime .fix-anime .anime .text h6 {
+  color: light;
+}
+section.fixed-anime .fix-anime .anime .text p {
+  color: #ccc;
+}
+@media (max-width: 767px) {
+  section.fixed-anime h3 {
+    font-size: 18px;
+  }
+  section.fixed-anime p {
+    font-size: 16px;
+  }
+}
+
+/*******************************    End Section fixed-anime   *******************************/
