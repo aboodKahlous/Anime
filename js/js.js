@@ -27,6 +27,11 @@ $(document).ready(function () {
   // })
 
 
+  $('.creat').click(function () {
+    $('form').animate({ height: "toggle", opacity: "toggle" }, 1500);
+    console.log("hello")
+  });
+
 })
 
 setTimeout(() => {
