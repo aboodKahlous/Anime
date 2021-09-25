@@ -56,11 +56,12 @@ header.navbar{
                 .search{
                     input[type="text"]{
                         width: 200px;
+                        margin-top: 3px;
                     } 
                     i{
                         position: absolute;
                         color: $color-three;
-                        top: 13px;
+                        top: 11px;
                     }   
                 }
             }

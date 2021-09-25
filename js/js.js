@@ -29,6 +29,12 @@ $(document).ready(function () {
 
 })
 
+setTimeout(() => {
+
+  // alert("Hello");
+
+}, 10000);
+
 $('.top-anime').slick({
   infinite: true,
   slidesToShow: 7,

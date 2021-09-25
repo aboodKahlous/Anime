@@ -1,3 +1,52 @@
+/*******************************    start header    *******************************/
+
+.top-section{
+    position: relative;
+    height: 650px;
+    width: 100%;
+    position: relative;
+    background: url(../../../img/animy.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+    .container{
+        h3{
+            font-size: 40px;
+        }
+        h4{
+            font-size: 25px;
+        }
+        h5{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: $color-three;
+        }
+        p{
+            line-height: 1.6;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width : 767px){
+        .container{
+            h3{
+                font-size: 25px;
+                margin-bottom: 0;
+            }
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+/*******************************    end header    *******************************/
+
+
+
+/*******************************    start secound section    *******************************/
 .secound-section{
     overflow: hidden;
     .anime{
@@ -47,12 +96,6 @@
         transform: scale(1.14);
         transition: 0.8s;
     }
-    // [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    //     cursor: pointer;
-    //     position: relative;
-    //     /* right: 0; */
-    //     /* top: 0; */
-    // }
     button.slick-next.slick-arrow {
         position: absolute;
         top: 35%;
@@ -65,54 +108,7 @@
     }
 
 }
-
-/*******************************    start header    *******************************/
-
-.top-section{
-    position: relative;
-    height: 650px;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    overflow: hidden;
-    z-index: 2;
-    .container{
-        h3{
-            font-size: 40px;
-        }
-        h4{
-            font-size: 25px;
-        }
-        h5{
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: $color-three;
-        }
-        p{
-            line-height: 1.6;
-            font-size: 20px;
-        }
-    }
-
-    @media (max-width : 767px){
-        .container{
-            h3{
-                font-size: 25px;
-                margin-bottom: 0;
-            }
-            h4{
-                font-size: 18px;
-            }
-            p{
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-
-/*******************************    end header    *******************************/
-
+/*******************************    start secound section    *******************************/
 
 
 /*******************************    start Section last-animy    *******************************/
@@ -212,10 +208,6 @@ section.last-animy{
 }  
 /*******************************    End Section last-animy   *******************************/
 
-
-
-
-
 /*******************************    start Section fixed-anime   *******************************/
 section.fixed-anime{
     margin-bottom: 30px;
@@ -282,12 +274,10 @@ section.fixed-anime{
     }
 }
 
-
-
-
-
 /*******************************    End Section fixed-anime   *******************************/
-
-
+.alert{
+    background-color: $color-one;
+    border: 1px solid $color-three;
+}
 
 

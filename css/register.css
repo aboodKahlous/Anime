@@ -357,287 +357,105 @@ header.navbar .active {
   left: 0;
 }
 
-/*******************************    start header    *******************************/
-.top-section {
-  position: relative;
-  height: 650px;
+.container {
   width: 100%;
-  position: relative;
-  background: url(../../../img/animy.png) no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
-  z-index: 2;
+  height: 100vh;
 }
-.top-section .container h3 {
-  font-size: 40px;
+.container h3 {
+  text-align: center;
 }
-.top-section .container h4 {
-  font-size: 25px;
+.container .form {
+  width: 500px;
 }
-.top-section .container h5 {
-  margin-top: 20px;
+.container .form label {
+  display: block;
   margin-bottom: 10px;
-  color: #960AFE;
-}
-.top-section .container p {
-  line-height: 1.6;
-  font-size: 20px;
-}
-@media (max-width: 767px) {
-  .top-section .container h3 {
-    font-size: 25px;
-    margin-bottom: 0;
-  }
-  .top-section .container h4 {
-    font-size: 18px;
-  }
-  .top-section .container p {
-    font-size: 14px;
-  }
-}
-
-/*******************************    end header    *******************************/
-/*******************************    start secound section    *******************************/
-.secound-section {
-  overflow: hidden;
-}
-.secound-section .anime {
-  position: relative;
-  cursor: pointer;
-  height: 200px;
-  margin-bottom: 30px;
-}
-.secound-section .anime img {
-  width: 110px;
-  height: 110px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.secound-section .anime img:hover {
-  opacity: 0.4;
-}
-.secound-section .anime .text {
   color: #fff;
-  margin-left: 15px;
-  margin-top: -10px;
 }
-.secound-section .anime .text h6 {
-  font-size: 14px;
-  color: #ccc;
+.container .form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #110E17;
+  border: 1px solid #960AFE;
+  color: #fff;
 }
-.secound-section .anime .Watch {
-  position: absolute;
-  top: 32%;
-  left: 43%;
+.container .form .account .text h5 {
+  color: #fff;
+  font-size: 13px;
 }
-.secound-section .anime .Watch i {
-  font-size: 18px;
-  color: rebeccapurple;
+.container .form .account .pass h5 {
+  font-size: 13px;
+  color: #fff;
 }
-.secound-section .top-anime .slick-center .anime {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  margin: 20px;
+.container .form .or {
+  width: 100%;
 }
-.secound-section .container .anime img {
-  margin: 20px;
-}
-.secound-section .top-anime .slick-center .anime img {
-  margin: 20px;
-}
-.secound-section .top-anime .slick-center img {
-  -webkit-transform: scale(1.14);
-          transform: scale(1.14);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-.secound-section button.slick-next.slick-arrow {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-}
-.secound-section button.slick-prev.slick-arrow {
-  position: absolute;
-  top: 35%;
-  left: -50%;
-}
-
-/*******************************    start secound section    *******************************/
-/*******************************    start Section last-animy    *******************************/
-section.last-animy {
-  margin-bottom: 40px;
-}
-section.last-animy h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.container .form .or h3 {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 10px;
   position: relative;
+  z-index: 999;
+  background-color: #110E17;
 }
-section.last-animy h3 span {
-  color: #960AFE;
-}
-section.last-animy h3::before {
+.container .form .or h3:after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  bottom: 13px;
   left: 0;
-  width: 40%;
-  height: 4px;
   background-color: #960AFE;
+  z-index: -1;
 }
-section.last-animy .animy-added .animy-last .animy {
-  width: 100%;
-  height: 180px;
-  position: relative;
-  margin-bottom: 20px;
+.container .form nav {
+  margin-top: 20px;
 }
-section.last-animy .animy-added .animy-last .animy img {
-  width: 100%;
-  height: 140px;
-}
-section.last-animy .animy-added .animy-last .animy .text {
+.container .form nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: #fff;
-}
-section.last-animy .animy-added .animy-last .animy .text h6 {
-  font-size: 14px;
-  color: #fff;
-}
-section.last-animy .animy-added .animy-last .animy .text p {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-section.last-animy .animy-added .animy-last .animy .text p i {
-  color: yellow;
-  margin-right: 5px;
-}
-section.last-animy .animy-added .animy-last .animy .add {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  width: 0;
-  height: calc(100% - 40px);
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: hidden;
 }
-section.last-animy .animy-added .animy-last .animy .add i {
+.container .form nav ul li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.container .form nav ul li a {
   color: #fff;
   font-size: 20px;
-  margin: 10px;
-  margin-top: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
-section.last-animy .animy-added .animy-last .animy .add i:nth-child(1):hover {
-  color: #d80e0e;
+.container .form nav ul li:nth-child(1) {
+  background-color: blue;
+  border: 1px solid blue;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 255, 0.5);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 255, 0.5);
 }
-section.last-animy .animy-added .animy-last .animy .add i:nth-child(2):hover {
-  color: #960AFE;
+.container .form nav ul li:nth-child(2) {
+  background-color: purple;
+  border: 1px solid purple;
+  -webkit-box-shadow: 0 0 30px 0 rgba(191, 0, 255, 0.5);
+          box-shadow: 0 0 30px 0 rgba(191, 0, 255, 0.5);
 }
-section.last-animy .animy-added .animy-last .animy:hover .add {
-  width: 100%;
-}
-@media (max-width: 767px) {
-  section.last-animy h3 {
-    font-size: 18px;
-  }
-  section.last-animy p {
-    font-size: 16px;
-  }
-}
-
-/*******************************    End Section last-animy   *******************************/
-/*******************************    start Section fixed-anime   *******************************/
-section.fixed-anime {
-  margin-bottom: 30px;
-}
-section.fixed-anime h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-}
-section.fixed-anime h3 span {
-  color: #960AFE;
-}
-section.fixed-anime h3::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 40%;
-  height: 4px;
-  background-color: #960AFE;
-}
-section.fixed-anime .fix-anime .anime {
-  margin-bottom: 10px;
-  position: relative;
-  width: 100%;
-}
-section.fixed-anime .fix-anime .anime img {
-  width: 100%;
-  height: 240px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-section.fixed-anime .fix-anime .anime img:hover {
-  opacity: 0.4;
-}
-section.fixed-anime .fix-anime .anime::before {
-  content: "Displays";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  padding: 5px;
-  width: 80px;
-  text-align: center;
-  background-color: rgba(150, 10, 254, 0.6);
-  border-radius: 0 12px 12px 0;
-  z-index: 3;
-}
-section.fixed-anime .fix-anime .anime .text h6 {
-  color: light;
-}
-section.fixed-anime .fix-anime .anime .text p {
-  color: #ccc;
-}
-@media (max-width: 767px) {
-  section.fixed-anime h3 {
-    font-size: 18px;
-  }
-  section.fixed-anime p {
-    font-size: 16px;
-  }
-}
-
-/*******************************    End Section fixed-anime   *******************************/
-.alert {
-  background-color: #110E17;
-  border: 1px solid #960AFE;
+.container .form nav ul li:nth-child(3) {
+  background-color: #0091ff;
+  border: 1px solid #0091ff;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 145, 255, 0.5);
+          box-shadow: 0 0 30px 0 rgba(0, 145, 255, 0.5);
 }
 
 @media (max-width: 767px) {
