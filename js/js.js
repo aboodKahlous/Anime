@@ -29,7 +29,6 @@ $(document).ready(function () {
 
   $('.creat').click(function () {
     $('form').animate({ height: "toggle", opacity: "toggle" }, 1500);
-    console.log("hello")
   });
 
 })
@@ -104,7 +103,7 @@ $('.top-anime').slick({
 
 //         '',
 //         'You Are Welcome',
-//         'Anime Club'   
+//         'Anime Club'
 //         ],
 
 //         typeSpeed: 60   ,
