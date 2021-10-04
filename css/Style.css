@@ -37,7 +37,7 @@ input:focus {
   outline: none;
 }
 
-.layout {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -394,6 +394,10 @@ header.navbar .active {
   .top-section .container p {
     font-size: 14px;
   }
+}
+.top-section img {
+  margin-top: 50px;
+  width: 400px;
 }
 
 /*******************************    end header    *******************************/

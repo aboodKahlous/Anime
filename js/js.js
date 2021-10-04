@@ -7,10 +7,11 @@ $(document).ready(function () {
     $(".btn").toggleClass("toggle");
   })
 
-  $(".item").on("click", function () {
-    (this).addClass("active").siblings().removeClass("active");
-  })
 
+  $(".nav div").on('click', function () {
+    console.log("hello");
+    ("div").addClass("active").siblings().removeClass("active");
+  })
 
   //   var scrollButtom = $("#buttom-up");
   // $(window).scroll(function () {

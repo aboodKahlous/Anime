@@ -1,8 +1,13 @@
+body{
+    background: url(../img/animy.png) no-repeat center center;
+    background-size: cover;
+}
 .container{
     width: 100%;
     height: 100vh;
-    h3{
+    h2{
         text-align: center;
+        animation: up 2s ease-in infinite alternate;
     }
     .form{
         width: 500px;
@@ -50,14 +55,23 @@
                 margin-bottom: 10px;
                 position: relative;
                 z-index: 999;
-                background-color: $color-one;   
                 &:after{
                     content: "";
                     position: absolute;
-                    width: 100%;
-                    height: 1px;
+                    width: 47%;
+                    height: 2px;
                     bottom: 13px;
                     left: 0;
+                    background-color: $color-three;
+                    z-index: -1;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 47%;
+                    height: 2px;
+                    bottom: 13px;
+                    right: 0;
                     background-color: $color-three;
                     z-index: -1;
                 }
@@ -87,17 +101,17 @@
                     &:nth-child(1){
                         background-color: blue;
                         border: 1px solid blue;
-                        box-shadow: 0 0 30px 0 rgba(0,0,255,0.5);
+                        box-shadow: 0 0 30px 0 rgba(0,0,255,0.5) ,  0 0 50px 0 rgba(0,0,255,0.5) ,  0 0 80px 0 rgba(0,0,255,0.5);
                     }
                     &:nth-child(2){
                         background-color: purple;
                         border: 1px solid purple;
-                        box-shadow: 0 0 30px 0 rgba(191, 0, 255, 0.5);
+                        box-shadow: 0 0 30px 0 rgba(191, 0, 255, 0.5),  0 0 50px 0 rgba(191, 0, 255, 0.5) ,  0 0 80px 0 rgba(191, 0, 255, 0.5);
                     }
                     &:nth-child(3){
                         background-color: rgb(0, 145, 255);
                         border: 1px solid rgb(0, 145, 255);
-                        box-shadow: 0 0 30px 0 rgba(0, 145, 255, 0.5);
+                        box-shadow: 0 0 30px 0 rgba(0, 145, 255, 0.5) ,  0 0 50px 0 rgba(0, 145, 255, 0.5) ,  0 0 80px 0 rgba(0, 145, 255, 0.5);
                     }
                 }
             }
@@ -105,6 +119,19 @@
 
     }
 
- 
+    .overlay{
+        position: relative;
+        background-color: rgba(255,255,255,0.7);
+    }
 
+}
+
+
+@keyframes up{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
 }
