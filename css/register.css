@@ -114,11 +114,52 @@ li {
   }
 }
 
+.top-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #960AFE;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-nav .login h5 {
+  color: #ddd;
+  display: inline;
+  margin-left: 20px;
+}
+.top-nav .login h5 a {
+  color: #ddd;
+}
+.top-nav .contact p {
+  color: #ddd;
+  display: inline;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.top-nav .contact ul {
+  display: inline;
+}
+.top-nav .contact ul li {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .top-nav {
+    display: none;
+  }
+}
+
 header.navbar {
   background-color: rgba(42, 48, 60, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 70px;
   z-index: 999;
@@ -270,7 +311,7 @@ header.navbar .side-bar {
   overflow: hidden;
   height: 100%;
   position: fixed;
-  top: 70px;
+  top: 50px;
   left: -350px;
   background-color: rgba(42, 48, 60, 0.9);
   width: 250px;
@@ -355,6 +396,18 @@ header.navbar .side-bar div.nav .item.active h5, header.navbar .side-bar div.nav
 }
 header.navbar .active {
   left: 0;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-tow {
+  position: fixed;
+  top: 70px;
+  left: -350px;
 }
 
 body {

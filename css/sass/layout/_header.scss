@@ -1,8 +1,46 @@
+.top-nav{
+    width: 100%;
+    height: 50px;
+    background-color: $color-three;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .login{
+        h5{
+            color: #ddd;
+            display: inline;
+            margin-left: 20px;
+            a{
+                color: #ddd;
+            }
+        }
+    }
+    .contact{
+        p{
+            color: #ddd;
+            display: inline;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        ul{
+            display: inline;
+            li{
+                display: inline;
+                width: 20px;
+                height: 20px;
+                color: #fff;
+                margin-right: 20px;
+            }
+        }
+    }
+    @media (max-width : 767px){
+        display: none;
+    }
+}
+
 header.navbar{
     background-color: rgba(42 ,48 ,60,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 70px;
     z-index : 999;
@@ -158,7 +196,7 @@ header.navbar{
         overflow: hidden;
         height: 100%;
         position: fixed;
-        top: 70px;
+        top: 50px;
         left: -350px;
         background-color: rgba(42 ,48 ,60,0.9);
 
@@ -240,4 +278,15 @@ header.navbar{
     .active{
         left : 0 ;
     }
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0 ; 
+    left: 0;
+}
+.sidebar-tow{
+    position: fixed;
+    top: 70px;
+    left: -350px;
 }

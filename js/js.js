@@ -34,12 +34,6 @@ $(document).ready(function () {
 
 })
 
-setTimeout(() => {
-
-  // alert("Hello");
-
-}, 10000);
-
 $('.top-anime').slick({
   infinite: true,
   slidesToShow: 7,
@@ -98,24 +92,18 @@ $('.top-anime').slick({
   ]
 });
 
+/// fixsed navbar And side-bar onscroll event 
 
-// var typed = new Typed('.type', {
-//     strings: [
+let nav = document.querySelector(".navbar");
+let sidebar = document.querySelector(".side-bar");
+console.log(sidebar);
 
-//         '',
-//         'You Are Welcome',
-//         'Anime Club'
-//         ],
-
-//         typeSpeed: 60   ,
-//         startDelay: 300,
-//         backSpeed: 60,
-//         smartBackspace: true,
-//         backDelay: 700,
-//         fadeOut: true,
-//         fadeOutClass: 'typed-fade-out',
-//         fadeOutDelay: 500,
-//         showCursor: true,
-//         cursorChar: ':',
-//         autoInsertCss: true,
-// });
+window.onscroll = function (e) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    nav.classList.add("fixed-nav");
+    sidebar.classList.add("sidebar-tow")
+  } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
+    nav.classList.remove("fixed-nav");
+    sidebar.classList.remove("sidebar-tow")
+  }
+}
