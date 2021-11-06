@@ -107,3 +107,19 @@ window.onscroll = function (e) {
     sidebar.classList.remove("sidebar-tow")
   }
 }
+
+
+/// TYPE-ANIME 
+let list = document.querySelectorAll(".types ul li");
+console.log(list);
+
+list.forEach(function (ele) {
+
+  ele.onclick = function () {
+    list.forEach(function (ele) {
+      ele.classList.remove("active");
+    });
+    this.classList.add("active");
+  }
+
+});

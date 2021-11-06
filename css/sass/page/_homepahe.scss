@@ -1,7 +1,5 @@
 /*******************************    start header    *******************************/
-
 .top-section{
-    position: relative;
     height: 650px;
     width: 100%;
     position: relative;
@@ -212,6 +210,9 @@ section.last-animy{
 }  
 /*******************************    End Section last-animy   *******************************/
 
+
+
+
 /*******************************    start Section fixed-anime   *******************************/
 section.fixed-anime{
     margin-bottom: 30px;
@@ -277,6 +278,133 @@ section.fixed-anime{
         }
     }
 }
+
+
+/*******************************    start Section type-anime   *******************************/
+.type-anime{
+
+    .container{
+        h3{
+            width: fit-content;
+            position: relative;
+            span{
+                color: $color-three;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 40%;
+                height: 4px;
+                background-color: $color-three
+            }
+        }
+        
+        .types{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                li{
+                    margin: 30px;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid $color-three;
+                    cursor: pointer;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        background-color: $color-three;
+                        transition: 0.3s ease-out;
+                        z-index: -1;
+                    }
+                    &:hover:after{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                li.active{
+                    background-color: $color-three;
+                    box-shadow: 0 0 20px rgba(150,10,254,0.5) , 0 0 30px rgba(150,10,254,0.5);
+                }
+            }
+            
+        }
+        .type-anime{    
+            img{
+                width: 100%;
+                height: 240px;
+            }
+            .watch{
+                position: relative;
+                transition: 0.6s;
+                img{
+                    transition: 0.3s;
+                    &:hover{
+                        opacity: 0.3;
+                    }
+                }
+                .icon{
+                    display: none;
+                    position: absolute;
+                    top : 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    i{
+                        color: $color-three;
+                        font-size: 30px;
+                    }
+                }
+                &:hover .icon{
+                    display: block;
+                }
+            }
+    
+            .text{
+                i{
+                    color: yellow;
+                }
+            }
+        }
+    }
+   @media(max-width : 767px){
+    .container{
+        h3{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .types{
+            ul{
+                margin: 30px 0;
+                padding: 0;
+                li{
+                    margin: 0;
+                    padding: 3px 6px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+   }
+}
+
+
+
+/*******************************    End Section type-animy   *******************************/
+
+
 
 /*******************************    End Section fixed-anime   *******************************/
 .alert{

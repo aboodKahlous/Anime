@@ -37,6 +37,11 @@ input:focus {
   outline: none;
 }
 
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
 .overlay {
   position: absolute;
   top: 0;

@@ -415,408 +415,197 @@ header.navbar .active {
   left: -350px;
 }
 
-/*******************************    start header    *******************************/
-.top-section {
-  height: 650px;
+section.contact .container {
   width: 100%;
-  position: relative;
-  background: url(../img/animy.png) no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
-  z-index: 2;
+  height: calc(100vh - 120px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.top-section .container h3 {
-  font-size: 40px;
+section.contact .container .form {
+  width: 60%;
 }
-.top-section .container h4 {
-  font-size: 25px;
+section.contact .container .form label {
+  display: block;
+  color: #fff;
 }
-.top-section .container h5 {
-  margin-top: 20px;
+section.contact .container .form input {
+  display: block;
+  padding: 10px;
+  width: 80%;
   margin-bottom: 10px;
-  color: #960AFE;
-}
-.top-section .container p {
-  line-height: 1.6;
-  font-size: 20px;
-}
-@media (max-width: 767px) {
-  .top-section .container h3 {
-    font-size: 25px;
-    margin-bottom: 0;
-  }
-  .top-section .container h4 {
-    font-size: 18px;
-  }
-  .top-section .container p {
-    font-size: 14px;
-  }
-}
-.top-section img {
-  margin-top: 50px;
-  width: 400px;
-}
-
-/*******************************    end header    *******************************/
-/*******************************    start secound section    *******************************/
-.secound-section {
-  overflow: hidden;
-}
-.secound-section .anime {
-  position: relative;
-  cursor: pointer;
-  height: 200px;
-  margin-bottom: 30px;
-}
-.secound-section .anime img {
-  width: 110px;
-  height: 110px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.secound-section .anime img:hover {
-  opacity: 0.4;
-}
-.secound-section .anime .text {
-  color: #fff;
-  margin-left: 15px;
-  margin-top: -10px;
-}
-.secound-section .anime .text h6 {
-  font-size: 14px;
-  color: #ccc;
-}
-.secound-section .anime .Watch {
-  position: absolute;
-  top: 32%;
-  left: 43%;
-}
-.secound-section .anime .Watch i {
-  font-size: 18px;
-  color: rebeccapurple;
-}
-.secound-section .top-anime .slick-center .anime {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  margin: 20px;
-}
-.secound-section .container .anime img {
-  margin: 20px;
-}
-.secound-section .top-anime .slick-center .anime img {
-  margin: 20px;
-}
-.secound-section .top-anime .slick-center img {
-  -webkit-transform: scale(1.14);
-          transform: scale(1.14);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-.secound-section button.slick-next.slick-arrow {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-}
-.secound-section button.slick-prev.slick-arrow {
-  position: absolute;
-  top: 35%;
-  left: -50%;
-}
-
-/*******************************    start secound section    *******************************/
-/*******************************    start Section last-animy    *******************************/
-section.last-animy {
-  margin-bottom: 40px;
-}
-section.last-animy h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-}
-section.last-animy h3 span {
-  color: #960AFE;
-}
-section.last-animy h3::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 40%;
-  height: 4px;
-  background-color: #960AFE;
-}
-section.last-animy .animy-added .animy-last .animy {
-  width: 100%;
-  height: 180px;
-  position: relative;
-  margin-bottom: 20px;
-}
-section.last-animy .animy-added .animy-last .animy img {
-  width: 100%;
-  height: 140px;
-}
-section.last-animy .animy-added .animy-last .animy .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  border: none;
+  border-bottom: 2px solid #960AFE;
+  background-color: #110E17;
   color: #fff;
 }
-section.last-animy .animy-added .animy-last .animy .text h6 {
-  font-size: 14px;
+section.contact .container .form textarea {
+  resize: none;
+  width: 80%;
+  padding: 10px;
   color: #fff;
-}
-section.last-animy .animy-added .animy-last .animy .text p {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-section.last-animy .animy-added .animy-last .animy .text p i {
-  color: yellow;
-  margin-right: 5px;
-}
-section.last-animy .animy-added .animy-last .animy .add {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  width: 0;
-  height: calc(100% - 40px);
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: hidden;
-}
-section.last-animy .animy-added .animy-last .animy .add i {
-  color: #fff;
-  font-size: 20px;
-  margin: 10px;
-  margin-top: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-section.last-animy .animy-added .animy-last .animy .add i:nth-child(1):hover {
-  color: #d80e0e;
-}
-section.last-animy .animy-added .animy-last .animy .add i:nth-child(2):hover {
-  color: #960AFE;
-}
-section.last-animy .animy-added .animy-last .animy:hover .add {
-  width: 100%;
-}
-@media (max-width: 767px) {
-  section.last-animy h3 {
-    font-size: 18px;
-  }
-  section.last-animy p {
-    font-size: 16px;
-  }
-}
-
-/*******************************    End Section last-animy   *******************************/
-/*******************************    start Section fixed-anime   *******************************/
-section.fixed-anime {
-  margin-bottom: 30px;
-}
-section.fixed-anime h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-}
-section.fixed-anime h3 span {
-  color: #960AFE;
-}
-section.fixed-anime h3::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 40%;
-  height: 4px;
-  background-color: #960AFE;
-}
-section.fixed-anime .fix-anime .anime {
-  margin-bottom: 10px;
-  position: relative;
-  width: 100%;
-}
-section.fixed-anime .fix-anime .anime img {
-  width: 100%;
-  height: 240px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-section.fixed-anime .fix-anime .anime img:hover {
-  opacity: 0.4;
-}
-section.fixed-anime .fix-anime .anime::before {
-  content: "Displays";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  padding: 5px;
-  width: 80px;
-  text-align: center;
-  background-color: rgba(150, 10, 254, 0.6);
-  border-radius: 0 12px 12px 0;
-  z-index: 3;
-}
-section.fixed-anime .fix-anime .anime .text h6 {
-  color: light;
-}
-section.fixed-anime .fix-anime .anime .text p {
-  color: #ccc;
-}
-@media (max-width: 767px) {
-  section.fixed-anime h3 {
-    font-size: 18px;
-  }
-  section.fixed-anime p {
-    font-size: 16px;
-  }
-}
-
-/*******************************    start Section type-anime   *******************************/
-.type-anime .container h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-}
-.type-anime .container h3 span {
-  color: #960AFE;
-}
-.type-anime .container h3::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 40%;
-  height: 4px;
-  background-color: #960AFE;
-}
-.type-anime .container .types {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.type-anime .container .types ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.type-anime .container .types ul li {
-  margin: 30px;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid #960AFE;
-  cursor: pointer;
-  position: relative;
-}
-.type-anime .container .types ul li:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background-color: #960AFE;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-  z-index: -1;
-}
-.type-anime .container .types ul li:hover:after {
-  width: 100%;
-  height: 100%;
-}
-.type-anime .container .types ul li.active {
-  background-color: #960AFE;
-  -webkit-box-shadow: 0 0 20px rgba(150, 10, 254, 0.5), 0 0 30px rgba(150, 10, 254, 0.5);
-          box-shadow: 0 0 20px rgba(150, 10, 254, 0.5), 0 0 30px rgba(150, 10, 254, 0.5);
-}
-.type-anime .container .type-anime img {
-  width: 100%;
-  height: 240px;
-}
-.type-anime .container .type-anime .watch {
-  position: relative;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-.type-anime .container .type-anime .watch img {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.type-anime .container .type-anime .watch img:hover {
-  opacity: 0.3;
-}
-.type-anime .container .type-anime .watch .icon {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.type-anime .container .type-anime .watch .icon i {
-  color: #960AFE;
-  font-size: 30px;
-}
-.type-anime .container .type-anime .watch:hover .icon {
+  background-color: #110E17;
+  border: none;
+  border-bottom: 2px solid #960AFE;
   display: block;
 }
-.type-anime .container .type-anime .text i {
-  color: yellow;
-}
-@media (max-width: 767px) {
-  .type-anime .container h3 {
-    font-size: 18px;
-  }
-  .type-anime .container p {
-    font-size: 14px;
-  }
-  .type-anime .container .types ul {
-    margin: 30px 0;
-    padding: 0;
-  }
-  .type-anime .container .types ul li {
-    margin: 0;
-    padding: 3px 6px;
-    font-size: 14px;
-  }
-}
-
-/*******************************    End Section type-animy   *******************************/
-/*******************************    End Section fixed-anime   *******************************/
-.alert {
+section.contact .container .form button {
+  padding: 10px 50px;
+  text-align: center;
+  border: 2px solid #960AFE;
   background-color: #110E17;
-  border: 1px solid #960AFE;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+section.contact .container .text {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.contact .container .text .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+section.contact .container .text .txt h1 {
+  margin-right: 50px;
+  color: #fff;
+}
+section.contact .container .text .txt h1:first-child {
+  position: relative;
+}
+section.contact .container .text .txt h1:first-child::before {
+  position: absolute;
+  content: "";
+  top: 55%;
+  left: 140px;
+  height: 4px;
+  border-radius: 10px;
+  width: 80px;
+  background-color: #960AFE;
+}
+section.contact .container .text .txt h1:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+section.contact .container .text .txt h1:last-child:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -210px;
+  height: 4px;
+  border-radius: 10px;
+  width: 210px;
+  background-color: #960AFE;
+}
+section.contact .container .text p {
+  color: #ddd;
+}
+section.contact .container .text ul li {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 26px;
+}
+@media (max-width: 878px) {
+  section.contact .container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.contact .container .form {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  section.contact .container .form input {
+    width: 100%;
+  }
+  section.contact .container .text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contact .container .text .txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+  }
+  section.contact .container .text .txt h1 {
+    margin-right: 50px;
+    color: #fff;
+  }
+  section.contact .container .text .txt h1:first-child {
+    position: relative;
+  }
+  section.contact .container .text .txt h1:first-child::before {
+    position: absolute;
+    content: "";
+    top: 55%;
+    left: 140px;
+    height: 4px;
+    border-radius: 10px;
+    width: 80px;
+    background-color: #960AFE;
+  }
+  section.contact .container .text .txt h1:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: relative;
+  }
+  section.contact .container .text .txt h1:last-child:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -210px;
+    height: 4px;
+    border-radius: 10px;
+    width: 210px;
+    background-color: #960AFE;
+  }
+  section.contact .container .text p {
+    color: #ddd;
+  }
+  section.contact .container .text ul li {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 767px) {
