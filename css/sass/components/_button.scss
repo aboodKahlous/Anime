@@ -68,3 +68,95 @@
     }
     
 }
+
+///////////////////////////////////////////////////////////hover btn 
+.btn-hover{
+    color: #fff;
+    padding : 10px 40px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: $color-one;
+    border: 2px solid $color-three;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        background-color: $color-three;
+        transition: 0.3s ease-out;
+        z-index: -1;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        background-color: $color-three;
+        transition: 0.3s ease-out;
+        z-index: -1;
+    }
+    &:hover:after{
+        width: 50%;
+        height: 100%;
+    }
+    &:hover:before{
+        width: 50%;
+        height: 100%;
+    }
+    &:hover{
+        box-shadow: 0 0 30px 0 rgba(209, 22, 209, 0.3) , 0 0 20px 0 rgba(209, 22, 209, 0.3);
+    }
+}
+
+
+/////////// list-btn
+.list-btn{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(209, 22, 209);
+    border: none;
+}
+
+// button to top 
+.btn-up{
+    position: fixed;
+    bottom: 30px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgba(209, 22, 209,0.5);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;;
+    overflow: hidden;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: rgb(209, 22, 209);
+        transition: 0.4s;
+        z-index: -1;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
+.show-btn-top{
+    right: 30px;
+}

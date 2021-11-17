@@ -1,0 +1,16 @@
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .list-btn{
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0;
+        background-color: $color-three;
+        border: none;
+        box-shadow: 0 0 30px 0 rgba(209, 22, 209,0.5) ,  0 0 50px 0 rgba(209, 22, 209,0.5);
+    }
+}

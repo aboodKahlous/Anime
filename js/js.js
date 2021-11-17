@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  // $("header i").on("click" , function(){
-  //     $(this).toggleClass("fa-align-right fa-times");
-  // })
   $("header button").on("click", function () {
     $(".side-bar").toggleClass("active");
     $(".btn").toggleClass("toggle");
@@ -12,21 +9,6 @@ $(document).ready(function () {
     console.log("hello");
     ("div").addClass("active").siblings().removeClass("active");
   })
-
-  //   var scrollButtom = $("#buttom-up");
-  // $(window).scroll(function () {
-  //     if ($(this).scrollTop() >= 300) {
-  //         scrollButtom.fadeIn(1000);
-  //     } else if ($(this).scrollTop() <= 300) {
-  //         scrollButtom.fadeOut(1000);
-  //     }
-  // })
-  // scrollButtom.click(function () {
-  //     $("html,body").animate({
-  //         scrollTop: 0
-  //     }, 1000);
-  // })
-
 
   $('.creat').click(function () {
     $('form').animate({ height: "toggle", opacity: "toggle" }, 1500);
@@ -92,24 +74,20 @@ $('.top-anime').slick({
   ]
 });
 
-/// fixsed navbar And side-bar onscroll event 
+///////////////////////////////////////// fixsed navbar onscroll event 
 
 let nav = document.querySelector(".navbar");
-let sidebar = document.querySelector(".side-bar");
-console.log(sidebar);
 
 window.onscroll = function (e) {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    nav.classList.add("fixed-nav");
-    sidebar.classList.add("sidebar-tow")
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    nav.classList.add("slide-down");
   } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
-    nav.classList.remove("fixed-nav");
-    sidebar.classList.remove("sidebar-tow")
+    nav.classList.remove("slide-down");
   }
 }
 
 
-/// TYPE-ANIME 
+/////////////////////////////////////////////////////////////////////////////// TYPE-ANIME 
 let list = document.querySelectorAll(".types ul li");
 console.log(list);
 
@@ -123,3 +101,21 @@ list.forEach(function (ele) {
   }
 
 });
+
+
+/////////////////////////////////////////////////////////////////////////////// top button 
+let btn = document.querySelector('.btn-up');
+window.onscroll = function () {
+  if (this.scrollY >= 400) {
+    btn.classList.add('show-btn-top');
+  } else {
+    btn.classList.remove('show-btn-top');
+  }
+}
+
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

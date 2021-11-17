@@ -309,8 +309,8 @@ section.fixed-anime{
             ul{
                 margin-top: 30px;
                 margin-bottom: 30px;
-                li{
-                    margin: 30px;
+                li.btn-hover{
+                    margin: 0;
                     color: #fff;
                     padding: 10px 20px;
                     border-radius: 5px;
@@ -328,9 +328,24 @@ section.fixed-anime{
                         transition: 0.3s ease-out;
                         z-index: -1;
                     }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        background-color: $color-three;
+                        transition: 0.3s ease-out;
+                        z-index: -1;
+                    }
                     &:hover:after{
                         width: 100%;
-                        height: 100%;
+                        height: 50%;
+                    }
+                    &:hover:before{
+                        width: 100%;
+                        height: 50%;
                     }
                 }
                 li.active{
@@ -391,6 +406,7 @@ section.fixed-anime{
                 padding: 0;
                 li{
                     margin: 0;
+                    border-radius: 0;
                     padding: 3px 6px;
                     font-size: 14px;
                 }
