@@ -21,9 +21,7 @@ button{
 button:focus{
     outline: none;
 }
-input{
-    border: none;
-}
+
 input:focus{
     outline: none;
 }
@@ -44,4 +42,21 @@ textarea:focus{
 li{
     list-style: none;
     display: inline-block;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: $color-three;
 }

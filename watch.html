@@ -14,14 +14,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootsrtap.5.1.0.css">
-    <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
     <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="css/register.css">
-
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
 </head>
 
 <body>
-
     <div class="top-nav">
 
         <div class="login">
@@ -41,7 +38,6 @@
         </div>
 
     </div>
-
 
 
     <header class="navbar">
@@ -129,84 +125,63 @@
     </header>
 
 
-    <section>
-        <div class="container register">
+    <section class="watch-anime my-4">
 
-            <div class="row ">
+        <div class="container">
 
-                <div class="col-md-7 col-12">
-                    <div class="sign-up">
+            <div class="row">
 
-                        <ul class="list-unstyled sign">
-                            <li><a href="#" class="signup active"> Sign Up </a></li>
-                            <li><a href="#" class="signin"> Sign In </a></li>
-                        </ul>
+                <div class="col-md-9 col-sm-12">
 
-                        <form action="#">
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <label for="firstname"> First Name </label>
-                                    <input type="text" name="" id="firstname">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="lastname"> Last Name </label>
-                                    <input type="text" name="" id="lastname">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label for="email"> Email </label>
-                                    <input type="email" name="" id="email">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="Password"> Password </label>
-                                    <input type="password" name="" id="Password">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="number"> Number </label>
-                                    <input type="number" name="" id="number">
-                                </div>
-
-
-
-                            </div>
-
-                            <button type="submit" class="btn-sign hvr-buzz-out"> Sign Up </button>
-                        </form>
-
-                    </div>
-                </div>
-
-                <div class="col-md-5 col-12 d-flex justify-content-center align-items-center text-center">
-
-                    <div class="join">
-                        <h4> Join Us To </h4>
-                        <h2> Anime Club </h2>
-                        <p> Watch anime on time, fast and with high accuracy </p>
-
-                        <ul class="list-unstyle">
-                            <li> <i class="fa fa-facebook"></i> </li>
-                            <li> <i class="fa fa-whatsapp"></i> </li>
-                            <li> <i class="fa fa-instagram"></i> </li>
-                            <li> <i class="fa fa-twitter"></i> </li>
-                        </ul>
+                    <div class="video">
+                        <i class="fa fa-power-off"></i>
                     </div>
 
+                    <div class="next-priv">
+                        <button class="prive" type="button"> Prive </button>
+                        <button class="next" type="button"> Next </button>
+                    </div>
 
                 </div>
+
+                <div class="col-md-3 col-sm-12">
+
+                    <div class="dawonlad">
+
+                        <div class="select">
+
+                            <ul class="list-unstyled">
+                                <li class="active">
+                                    <a href="#">
+                                        <i class="fa fa-download"> </i>
+                                        <span> Download </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-play"> </i>
+                                        <span> Paly </span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
+
         </div>
+
     </section>
 
 
 
 
-
-    <script src=" js/boostrap.5.1.0.js"></script>
+    <script src="js/boostrap.5.1.0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -219,27 +194,6 @@
                 $(".btn").toggleClass("toggle");
             })
         })
-
-        let signIn = document.querySelector('.signin');
-        console.log(signIn);
-        let signUp = document.querySelector('.signup');
-        console.log(signUp);
-
-
-        let list = document.querySelector('sign ul li');
-        console.log(list)
-        list.foreach(function (ele) {
-
-            ele.onclick = function () {
-                list.foreach = (function (ele) {
-                    ele.classList.remove('active')
-                });
-                this.classList.add('active');
-            }
-
-        })
-
-
     </script>
 </body>
 

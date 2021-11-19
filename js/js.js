@@ -76,17 +76,6 @@ $('.top-anime').slick({
 
 ///////////////////////////////////////// fixsed navbar onscroll event 
 
-let nav = document.querySelector(".navbar");
-
-window.onscroll = function (e) {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    nav.classList.add("slide-down");
-  } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
-    nav.classList.remove("slide-down");
-  }
-}
-
-
 /////////////////////////////////////////////////////////////////////////////// TYPE-ANIME 
 let list = document.querySelectorAll(".types ul li");
 console.log(list);
@@ -103,13 +92,22 @@ list.forEach(function (ele) {
 });
 
 
-/////////////////////////////////////////////////////////////////////////////// top button 
+/////////////////////////////////////////////////////////////////////////////// top button  and fixed scroll and sidbar
 let btn = document.querySelector('.btn-up');
+let nav = document.querySelector(".navbar");
+let sidbar = document.querySelector('.side-bar');
+console.log(sidbar);
 window.onscroll = function () {
   if (this.scrollY >= 400) {
     btn.classList.add('show-btn-top');
-  } else {
+  } else if (this.scrollY > 0) {
+    nav.classList.add('slide-down');
+    sidbar.classList.add('side-bar-scroll');
+  }
+  else {
     btn.classList.remove('show-btn-top');
+    nav.classList.remove('slide-down');
+    sidbar.classList.remove('side-bar-scroll');
   }
 }
 
