@@ -1,14 +1,19 @@
+
 .info-the-anime{
     padding: 20px;
     width: 100%;
     height: auto;
-    background-color: #181d22;
-    backdrop-filter: blur(50%);
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.5),  0 0 30px 0 rgba(0,0,0,0.5);
+    z-index: 999;
+    position: relative;
     .image{
         position: relative;
         z-index: 1;
         overflow: hidden;
+        margin-bottom: 20px;
         &:after{
             content: "مستمر";
             position: absolute;
@@ -55,6 +60,31 @@
             background-color: $color-three;
             border: none;
             box-shadow: 0 0 30px 0 rgba(209, 22, 209,0.5) ,  0 0 50px 0 rgba(209, 22, 209,0.5);
+        }
+    }
+    @media (max-width : 767px){
+        .desc{
+            ul{
+                li{
+                    color: #fff;
+                    margin-right: 0;
+                    margin-top: 30px;
+                    padding: 4px 4px;
+                    border-radius: 5px;
+                }
+            }
+            .list-btn{
+                width: 120px;
+                height: 40px;
+                font-size: 16px;
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 40px;
+                background-color: $color-three;
+                border: none;
+                box-shadow: 0 0 30px 0 rgba(209, 22, 209,0.5) ,  0 0 50px 0 rgba(209, 22, 209,0.5);
+            }
         }
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>favorit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,22 +16,10 @@
     <link rel="stylesheet" href="css/bootsrtap.5.1.0.css">
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
-    <style>
-        body:after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(#600c68, #3b0366);
-            clip-path: circle(20% at right 50%);
-            z-index: 9;
-        }
-    </style>
 </head>
 
 <body>
+
     <div class="top-nav">
 
         <div class="login">
@@ -58,7 +46,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <div class="logo">
-                <h3> <a href="index.html"> ANIME CLUB </a></h3>
+                <h3> <a href="#"> ANIME CLUB </a></h3>
             </div>
 
             <div class="form">
@@ -119,7 +107,9 @@
                     <p><i class="fa fa-align-justify"></i></p>
                 </div>
                 <div class="item">
-                    <h5> My favorite anime </h5>
+                    <a href="my-favorit.html">
+                        <h5> My favorite anime </h5>
+                    </a>
                     <p><i class="fa fa-heart"></i></p>
                 </div>
                 <div class="item">
@@ -138,109 +128,36 @@
     </header>
 
 
-
-    <section class="info my-3 my-3">
-
-        <div class="container">
-
-            <div class="info-the-anime">
-
-                <div class="row">
-
-                    <div class="col-md-3 col-sm-3 image">
-                        <img src="img/jujutsu .png" alt="">
-                    </div>
-
-                    <div class="col-md-9 col-sm-12 desc">
-
-                        <h1 class="text-white mb-3"> jujutsu Kisen </h1>
-                        <p class="lead text-light mb-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-                            ab,
-                            quisquam obcaecati dolores maxime earum dolor nobis at esse nemo? Tenetur nisi incidunt
-                            magni quam ea ratione? Accusantium, doloribus enim. </p>
-                        <span class="text-white"> IMDP 9.7 <i class="fa fa-star"></i> </span>
-
-                        <ul class="list-unstyled">
-                            <li class="bg-danger"> Action </li>
-                            <li class="bg-info"> Horror </li>
-                            <li class="bg-danger"> Adventure </li>
-                            <li class="bg-info"> Fiction </li>
-                            <li class="bg-danger"> Romantic </li>
-                        </ul>
-
-                        <button class="list-btn hvr-buzz-out"> <i class="fa fa-play"></i> </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="animes">
+    <section class="favorit">
 
         <div class="container">
-
-            <h3 class="text-white"> Similar Anime </h3>
-
+            <h3 class="text-wight mb-3 "> My Favorit </h3>
             <div class="row">
+
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 col-no-padding col-mobile-no-padding">
-                    <a href="#">
-                        <div class="type-anime">
-                            <div class="watch">
-                                <img src="img//jujutsu .png" class="rounded" alt="">
-                            </div>
-                        </div>
-                    </a>
+                    <img src="img/100 man no inochi.png" class="rounded" alt="">
                 </div>
 
 
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 col-no-padding col-mobile-no-padding">
-                    <a href="#">
-                        <div class="type-anime">
-                            <div class="watch">
-                                <img src="img/Akame.png" class="rounded" alt="">
-                            </div>
-                        </div>
-                    </a>
+                    <img src="img/boruto.png" class="rounded" alt="">
                 </div>
-
 
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 col-no-padding col-mobile-no-padding">
-                    <a href="#">
-                        <div class="type-anime">
-                            <div class="watch">
-                                <img src="img/dragon ball super.png" class="rounded" alt="">
-                            </div>
-                        </div>
-                    </a>
+                    <img src="img/dragon ball super.png" class="rounded" alt="">
                 </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 col-no-padding col-mobile-no-padding">
+                    <img src="img/night head genesis.png" class="rounded" alt="">
+                </div>
+
             </div>
-
         </div>
 
     </section>
 
 
-    <footer class="py-4 bg-dark">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h6 class="text-white"> CopyRight <i class="fa fa-copyright"></i> 2021 </h6>
-            <ul class="list-unstyled">
 
-                <!-- <li> <i class="fa fa-user"></i> </li> -->
-                <!-- <li> <i class="fa fa-user"></i> </li>
-                <li> <i class="fa fa-user"></i> </li>
-                <li> <i class="fa fa-user"></i> </li> -->
-
-            </ul>
-            <h6 class="text-white"> Designed By Obada Kahlous </h6>
-        </div>
-    </footer>
 
     <script src="js/boostrap.5.1.0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -249,11 +166,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/typed.js"></script>
     <script>
-        $(document).ready(function () {
-            $("header button").on("click", function () {
-                $(".side-bar").toggleClass("active");
-                $(".btn").toggleClass("toggle");
-            })
+        $("header button").on("click", function () {
+            $(".side-bar").toggleClass("active");
+            $(".btn").toggleClass("toggle");
         })
     </script>
 </body>

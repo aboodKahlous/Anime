@@ -34,14 +34,23 @@ section.contact{
         }
         .image{
             width: 40%;
+            margin: 0 auto;
+            img{
+                width: 300px;
+                height: 300p;
+
+            }
         }
     }
+
+
     @media (max-width : 767px){
         .form{
             display: flex;
             flex-direction: column;
             form{
                 width: 100%;
+                margin-bottom: 30px;
                 input{
                     width: 100%;
                 }
@@ -51,6 +60,10 @@ section.contact{
             }
             .image{
                 width: 100%;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
        
