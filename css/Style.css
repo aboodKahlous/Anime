@@ -1197,6 +1197,22 @@ section.my-list-anime .animes .anime .info:hover .do {
   }
 }
 
+.add {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.add button {
+  width: 120px;
+  text-align: center;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #960AFE;
+  -webkit-box-shadow: 0 0 30px 0 #960AFE, 0 0 30px 0 #960AFE;
+          box-shadow: 0 0 30px 0 #960AFE, 0 0 30px 0 #960AFE;
+  border-radius: 10px;
+}
+
 .top-section .container ul li {
   display: inline-block;
   margin: 20px;
