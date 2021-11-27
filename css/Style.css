@@ -988,7 +988,7 @@ section.my-list-anime .animes .anime .info:hover .do {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: 400px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .watch-anime .video i {
@@ -1025,7 +1025,7 @@ section.my-list-anime .animes .anime .info:hover .do {
 }
 .watch-anime .dawonlad {
   width: 100%;
-  height: calc(100vh - 120px);
+  height: 400px;
   background-color: #181d22;
   border-radius: 10px;
   padding: 10px;
@@ -1051,6 +1051,19 @@ section.my-list-anime .animes .anime .info:hover .do {
 }
 .watch-anime .dawonlad .select li.active a {
   color: #fff;
+}
+.watch-anime .dawonlad .download-list ul {
+  padding: 0;
+  margin: 0;
+}
+.watch-anime .dawonlad .download-list ul li {
+  margin: 0 0 40px 0;
+  padding: 0;
+  display: block;
+}
+.watch-anime .dawonlad .download-list ul li i {
+  float: right;
+  color: #960AFE;
 }
 
 .info-the-anime {
@@ -1188,6 +1201,24 @@ section.my-list-anime .animes .anime .info:hover .do {
 
 .favorit {
   margin: 30px 0;
+}
+.favorit h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.favorit h3 span {
+  color: #960AFE;
+}
+.favorit h3::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40%;
+  height: 4px;
+  background-color: #960AFE;
 }
 @media (max-width: 767px) {
   .favorit img {

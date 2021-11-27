@@ -106,7 +106,9 @@
                     <p><i class="fa fa-align-justify"></i></p>
                 </div>
                 <div class="item">
-                    <h5> My favorite anime </h5>
+                    <a href="my-favorit.html">
+                        <h5> My favorite anime </h5>
+                    </a>
                     <p><i class="fa fa-heart"></i></p>
                 </div>
                 <div class="item">
@@ -250,7 +252,13 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/typed.js"></script>
-    <script src="js/js.js"></script>
+    <script>
+        $("header button").on("click", function () {
+            $(".side-bar").toggleClass("active");
+            $(".btn").toggleClass("toggle");
+        })
+
+    </script>
 
 </body>
 

@@ -1,7 +1,21 @@
 .favorit{
     margin: 30px 0;
-
-
+    h3{
+        width: fit-content;
+        position: relative;
+        span{
+            color: $color-three;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40%;
+            height: 4px;
+            background-color: $color-three
+        }
+    }
 
     @media (max-width : 767px){
         img{
