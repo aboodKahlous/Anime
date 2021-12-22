@@ -473,6 +473,104 @@ header.navbar .active {
 }
 
 /*******************************    start secound section    *******************************/
+/*******************************    start section comming soon    *******************************/
+.comming-soon h3 {
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 999;
+}
+.comming-soon h3:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 5px;
+  left: 50%;
+  bottom: -10px;
+  background-color: blueviolet;
+  z-index: -1;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-animation: comming 2s infinite alternate;
+          animation: comming 2s infinite alternate;
+}
+.comming-soon .soon img {
+  margin: auto;
+  border-radius: 50%;
+}
+.comming-soon .soon ul {
+  margin: 20px auto;
+}
+.comming-soon .soon ul li {
+  margin: 20px;
+  color: #fff;
+  background-color: #410882;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.comming-soon .soon ul li p {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+@-webkit-keyframes comming {
+  0% {
+    left: 50%;
+    width: 10px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+            box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+  }
+  50% {
+    left: 60%;
+    width: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  100% {
+    left: 40%;
+    width: 10px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+            box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+  }
+}
+
+@keyframes comming {
+  0% {
+    left: 50%;
+    width: 10px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+            box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+  }
+  50% {
+    left: 60%;
+    width: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  100% {
+    left: 40%;
+    width: 10px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+            box-shadow: 0 0 10px 0 rgba(150, 10, 254, 0.5), 0 0 10px 0 rgba(150, 10, 254, 0.5);
+  }
+}
+/*******************************    ens section comming soon    *******************************/
 /*******************************    start Section last-animy    *******************************/
 section.last-animy {
   margin-bottom: 40px;
@@ -783,6 +881,16 @@ section.fixed-anime .fix-anime .anime .text p {
 .alert {
   background-color: #110E17;
   border: 1px solid #960AFE;
+}
+
+.anime {
+  overflow: hidden;
+}
+.anime img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.1) rotate(5deg);
+          transform: scale(1.1) rotate(5deg);
 }
 
 section.contact .form {
@@ -1219,6 +1327,41 @@ section.my-list-anime .animes .anime .info:hover .do {
   width: 40%;
   height: 4px;
   background-color: #960AFE;
+}
+.favorit .anime-character {
+  position: relative;
+}
+.favorit .anime-character img {
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0.9;
+}
+.favorit .anime-character img:hover {
+  opacity: 0.6;
+}
+.favorit .anime-character .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 88%;
+  margin-left: 11px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.favorit .anime-character .info h5 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+.favorit .anime-character .info p {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+.favorit .anime-character .info p i {
+  color: yellow;
 }
 @media (max-width: 767px) {
   .favorit img {

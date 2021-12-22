@@ -17,6 +17,42 @@
         }
     }
 
+     .anime-character{
+         position: relative;
+         img{
+             width: 100%;
+             transition: 0.4s;
+             opacity: 0.9;
+             &:hover{
+                 opacity: 0.6;
+             }
+         }
+         .info{
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             width: 88%;
+             margin-left: 11px;
+             text-align: center;
+             padding: 10px;
+             background-color: rgba(0,0,0,0.2);
+             h5{
+                 margin: 0;
+                 color: #fff; 
+                 font-size: 18px;
+             }
+             p{
+                 margin: 0;
+                 color: #fff;
+                 font-size: 16px;
+                 i{
+                     color: yellow;
+                 }
+             }
+             
+         }
+     }
+
     @media (max-width : 767px){
         img{
             width: 100%;
