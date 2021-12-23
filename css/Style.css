@@ -263,6 +263,8 @@ header.navbar .container .sidebar-btn .btn.toggle span::after {
   }
 }
 header.navbar .side-bar {
+  position: relative;
+  z-index: 999;
   overflow: hidden;
   height: 100%;
   position: fixed;
@@ -1184,7 +1186,7 @@ section.my-list-anime .animes .anime .info:hover .do {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5), 0 0 30px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5), 0 0 30px 0 rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 111;
   position: relative;
 }
 .info-the-anime .image {
@@ -1226,10 +1228,12 @@ section.my-list-anime .animes .anime .info:hover .do {
 .info-the-anime .desc span i {
   color: yellow;
 }
+.info-the-anime .desc ul {
+  margin-top: 30px;
+}
 .info-the-anime .desc ul li {
   color: #fff;
   margin-right: 5px;
-  margin-top: 30px;
   padding: 5px 20px;
   border-radius: 5px;
 }
@@ -1239,11 +1243,26 @@ section.my-list-anime .animes .anime .info:hover .do {
   color: #fff;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: -10px;
   background-color: #960AFE;
   border: none;
   -webkit-box-shadow: 0 0 30px 0 rgba(209, 22, 209, 0.5), 0 0 50px 0 rgba(209, 22, 209, 0.5);
           box-shadow: 0 0 30px 0 rgba(209, 22, 209, 0.5), 0 0 50px 0 rgba(209, 22, 209, 0.5);
+}
+.info-the-anime .desc .add-btn {
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.info-the-anime .desc .add-btn:hover {
+  background-color: #960AFE;
+  color: #fff;
 }
 @media (max-width: 767px) {
   .info-the-anime .desc ul li {

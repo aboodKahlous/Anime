@@ -194,6 +194,8 @@ header.navbar{
     }
 
     .side-bar{
+        position: relative;
+        z-index: 999;
         overflow: hidden;
         height: 100%;
         position: fixed;
